@@ -9,6 +9,7 @@ body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 100px auto 100px;
+    row-gap: 10px;
 }
 
 header {
@@ -70,6 +71,7 @@ footer {
 
 
 main {
+    padding: 10px;
     grid-column-start: 2;
     background-color: white;
 }
@@ -84,7 +86,16 @@ aside {
     margin-left: 30px;
 }
 
+aside ul {
+    margin: 0;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
 aside h2 {
+    margin: 0px;
     text-align: center;
     border-left: 10px solid rgb(54, 172, 219);
     background-color: skyblue;
