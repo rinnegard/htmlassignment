@@ -1,32 +1,76 @@
 body {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 }
 
 header {
     display: grid;
     background-color: skyblue;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100px;
+    grid-column-start: span 3;
+
 }
 
 header h1 {
     grid-column-start: 2;
     text-align: center;
+    font-family: sans-serif;
 }
 
 header nav ul {
     list-style: none;
+    margin: 0;
 }
 
 header nav ul li {
     background-color: slategray;
     color: whitesmoke;
     border-radius: 4px;
-    padding: 5px
+    margin: 2px;
+}
+
+header nav ul li:hover {
+    background-color: rgb(79, 90, 102);
+}
+
+header nav ul li:active {
+    background-color: rgb(53, 60, 68);
 }
 
 header nav ul li a {
+    display:block;
+    padding: 5px;
     color:antiquewhite;
     text-decoration: none;
 }
+
+footer {
+    grid-column-start: span 3;
+    text-align: center;
+    background-color: skyblue;
+    margin-top: 50px;
+}
+
+
+main {
+    grid-column-start: 2;
+}
+
+main article img {
+    float: right;
+    padding: 10px;
+}
+
+aside {
+    grid-column-start: 3;
+    margin-left: 30px;
+
+}
+
+aside h2 {
+    text-align: center;
+    border-bottom: 5px solid skyblue;
+}
+
