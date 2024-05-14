@@ -1,8 +1,14 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px auto 100px;
 }
 
 header {
@@ -10,7 +16,6 @@ header {
     background-color: skyblue;
     grid-template-columns: 20% 60% 20%;
     grid-column-start: span 3;
-
 }
 
 header h1 {
@@ -19,9 +24,16 @@ header h1 {
     font-family: sans-serif;
 }
 
+header nav {
+    grid-column-start: 1;
+    display: flex;
+}
+
 header nav ul {
     list-style: none;
-    margin: 0;
+    margin: auto 0;
+    padding-left: 10px;
+    width: 150px;
 }
 
 header nav ul li {
@@ -44,18 +56,22 @@ header nav ul li a {
     padding: 5px;
     color:antiquewhite;
     text-decoration: none;
+    text-align: center;
 }
 
 footer {
     grid-column-start: span 3;
+    grid-row-start: 3;
     text-align: center;
     background-color: skyblue;
     margin-top: 50px;
+    height: 50px;
 }
 
 
 main {
     grid-column-start: 2;
+    background-color: white;
 }
 
 main article img {
@@ -66,11 +82,12 @@ main article img {
 aside {
     grid-column-start: 3;
     margin-left: 30px;
-
 }
 
 aside h2 {
     text-align: center;
-    border-bottom: 5px solid skyblue;
+    border-left: 10px solid rgb(54, 172, 219);
+    background-color: skyblue;
+    
 }
 
