@@ -7,11 +7,14 @@ body {
     font-family: sans-serif;
     width: 1024px;
     margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 header {
     background-color: orange;
     display: flex;
+    flex-grow: 1
 }
 
 header h1 {
@@ -48,7 +51,9 @@ nav ul li a:hover {
 }
 
 main {
-    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     background-color: yellow;
     width: 80%;
 }
@@ -57,8 +62,11 @@ main > p, main > h2 {
     padding: 20px;
 }
 
+main > h2 {
+    
+}
+
 article {
-    float: left;
     width: 40%;
     background-color:rgb(253, 172, 213);
     padding: 10px;
@@ -78,7 +86,6 @@ article:first-of-type p:nth-of-type(2) {
 aside {
     background-color: darkgreen;
     width: 20%;
-    float: right;
 }
 
 aside ul li ol > li:nth-child(odd) {
@@ -94,7 +101,7 @@ aside h2 {
 }
 
 footer {
-    clear: both;
+    flex-grow: 1;
     background-color: purple;
     height: 50px;
     display: flex;
