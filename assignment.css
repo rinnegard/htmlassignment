@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,14 +14,90 @@ header {
     display: flex;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+nav {
+    margin: 0 5px;
+}
+
+nav ul{
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav ul li a {
+    display: flex;
+    height: 100%;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
 main {
+    float: left;
     background-color: yellow;
+    width: 80%;
+}
+
+main > p, main > h2 {
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 40%;
+    background-color:rgb(253, 172, 213);
+    padding: 10px;
+    margin: 10px;
+}
+
+article img {
+    float: left;
+    padding-right: 10px;
+}
+
+article:first-of-type p:nth-of-type(2) {
+    font-weight: bold;
+    color: blue;
 }
 
 aside {
-    background-color: green;
+    background-color: darkgreen;
+    width: 20%;
+    float: right;
+}
+
+aside ul li ol > li:nth-child(odd) {
+    color: red;
+}
+
+aside ul li ol > li:nth-child(even) {
+    color: orange;
+}
+
+aside h2 {
+    padding: 10px;
 }
 
 footer {
+    clear: both;
     background-color: purple;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
