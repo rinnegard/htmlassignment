@@ -21,19 +21,22 @@ header {
 
 header h1 {
     grid-column-start: 2;
-    text-align: center;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav {
-    grid-column-start: 1;
+    grid-column-start: 3;
     display: flex;
+    justify-content: end;
 }
 
 header nav ul {
     list-style: none;
     margin: auto 0;
-    padding-left: 10px;
+    padding-right: 10px;
     width: 150px;
 }
 
