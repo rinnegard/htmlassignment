@@ -1,4 +1,26 @@
 * {
     margin: 0;
-    
+}
+
+body {
+    font-family: sans-serif;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: orange;
+    display: flex;
+}
+
+main {
+    background-color: yellow;
+}
+
+aside {
+    background-color: green;
+}
+
+footer {
+    background-color: purple;
 }
