@@ -31,7 +31,7 @@ header {
 
 }
 
-.innerHeader {
+.inner-header {
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
