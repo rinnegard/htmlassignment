@@ -118,4 +118,15 @@ label {
 input, select {
     height: 2rem;
     padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+input:hover, select:hover {
+    border: 1px solid blue;
+}
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid paleturquoise;
+    background-color: azure;
 }
