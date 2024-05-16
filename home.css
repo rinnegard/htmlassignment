@@ -41,7 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px;
+    padding-left: 10px;
 }
 
 main {
@@ -144,4 +144,36 @@ button {
 button:hover {
     background-color: aquamarine;
     cursor: pointer;
+}
+
+nav {
+    width: 120px;
+    text-align: center;
+}
+
+nav ol {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    color: white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    display: block;
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: rgb(169, 214, 253);
 }
