@@ -27,6 +27,58 @@
     </header>
     <main>
         <h1>Forms</h1>
+
+        <form action="" method="get">
+            <fieldset>
+                <legend>Person</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="birth"></label>
+                <input type="date" name="birth" id="birth">
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping Adress</legend>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="sweden">Sweden</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="norway">Norway</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                </select>
+                <label for="street">Street</label>
+                <input type="text" name="street" id="street">
+                <label for="postalCode">Postal Code:</label>
+                <input type="number" name="postalCode" id="postalCode">
+            </fieldset>
+
+            <fieldset>
+                <legend>Items</legend>
+                <h3>Fruits:</h3>
+                <label for="apple">Apple</label>
+                <input type="checkbox" name="apple" id="apple" value="Apple">
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana" value="banana">
+                <label for="pear">Pear</label>
+                <input type="checkbox" name="pear" id="pear" value="pear">
+                <label for="kiwi">Kiwi</label>
+                <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
+                <label for="pineapple">Pineapple</label>
+                <input type="checkbox" name="pineapple" id="pineapple" value="pineapple">
+
+                <h3>Vegetables:</h3>
+                <label for="carrot">Carrot:</label>
+                <input type="radio" name="vegetables" id="carrot">
+                <label for="onion">Onion:</label>
+                <input type="radio" name="vegetables" id="onion">
+                <label for="tomato">Tomato:</label>
+                <input type="radio" name="vegetables" id="tomato">
+            </fieldset>
+            <button type="submit">Send</button>
+        </form>
     </main>
     <footer>
 
