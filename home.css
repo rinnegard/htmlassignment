@@ -106,6 +106,7 @@ form {
 fieldset {
     display: flex;
     flex-flow: column;
+    align-items: flex-start;
 
     padding: 20px;
     margin: 10px 0;
@@ -120,6 +121,7 @@ input, select {
     padding: 5px;
     border-radius: 10px;
     border: 1px solid black;
+    width: 50%;
 }
 
 input:hover, select:hover {
@@ -129,4 +131,17 @@ input:focus, select:focus {
     outline: none;
     border: 1px solid paleturquoise;
     background-color: azure;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+button:hover {
+    background-color: aquamarine;
+    cursor: pointer;
 }
