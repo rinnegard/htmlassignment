@@ -103,11 +103,32 @@ form {
     flex-flow: column nowrap;
 }
 
-fieldset {
+.text-input-group {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+}
 
+.box-input-group {
+    display: flex;
+    flex-flow: row;
+}
+
+.box-input-group div {
+    min-width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: start;
+}
+
+.check {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    align-items: center;
+}
+
+fieldset {
     padding: 20px;
     margin: 10px 0;
 }
@@ -125,7 +146,7 @@ input, select {
 }
 
 input:hover, select:hover {
-    border: 1px solid blue;
+    border: 1px solid paleturquoise;
 }
 input:focus, select:focus {
     outline: none;

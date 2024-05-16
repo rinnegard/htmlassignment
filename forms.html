@@ -29,7 +29,7 @@
         <h1>Forms</h1>
 
         <form action="" method="get">
-            <fieldset>
+            <fieldset class="text-input-group">
                 <legend>Info</legend>
                 <label for="firstName">First Name:</label>
                 <input type="text" name="firstName" id="firstName">
@@ -39,7 +39,7 @@
                 <input type="date" name="birth" id="birth">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="text-input-group">
                 <legend>Shipping Adress</legend>
                 <label for="country">Country:</label>
                 <select name="country" id="country">
@@ -55,27 +55,48 @@
                 <input type="number" name="postalCode" id="postalCode">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="box-input-group">
                 <legend>Items</legend>
-                <h3>Fruits:</h3>
-                <label for="apple">Apple</label>
-                <input type="checkbox" name="apple" id="apple" value="Apple">
-                <label for="banana">Banana</label>
-                <input type="checkbox" name="banana" id="banana" value="banana">
-                <label for="pear">Pear</label>
-                <input type="checkbox" name="pear" id="pear" value="pear">
-                <label for="kiwi">Kiwi</label>
-                <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
-                <label for="pineapple">Pineapple</label>
-                <input type="checkbox" name="pineapple" id="pineapple" value="pineapple">
+                <div>
+                    <h3>Fruits:</h3>
+                    <div class="check">
+                        <label for="apple">Apple</label>
+                        <input type="checkbox" name="apple" id="apple" value="Apple">
+                    </div>
+                    <div class="check">
+                        <label for="banana">Banana</label>
+                        <input type="checkbox" name="banana" id="banana" value="banana">
+                    </div>
+                    <div class="check">
+                        <label for="pear">Pear</label>
+                        <input type="checkbox" name="pear" id="pear" value="pear">
+                    </div>
+                    <div class="check">
+                        <label for="kiwi">Kiwi</label>
+                        <input type="checkbox" name="kiwi" id="kiwi" value="kiwi">
+                    </div>
+                    <div class="check">
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" name="pineapple" id="pineapple" value="pineapple">    
+                    </div>
+                </div>
 
-                <h3>Vegetables:</h3>
-                <label for="carrot">Carrot:</label>
-                <input type="radio" name="vegetables" id="carrot">
-                <label for="onion">Onion:</label>
-                <input type="radio" name="vegetables" id="onion">
-                <label for="tomato">Tomato:</label>
-                <input type="radio" name="vegetables" id="tomato">
+                <div>
+                    <h3>Vegetables:</h3>
+                    <div class="check">
+                        <label for="carrot">Carrot:</label>
+                        <input type="radio" name="vegetables" id="carrot">
+                    </div>
+                    <div class="check">
+                        <label for="onion">Onion:</label>
+                        <input type="radio" name="vegetables" id="onion">
+                    </div>
+                    <div class="check">
+                        <label for="tomato">Tomato:</label>
+                        <input type="radio" name="vegetables" id="tomato">
+                    </div>
+                </div>
+
             </fieldset>
             <button type="submit">Send</button>
         </form>
